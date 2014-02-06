@@ -5,6 +5,13 @@ $(document).ready(function() {
 	initializePage();
 })
 
+// Click selecter
+$(".friend a").click(function(e){
+	e.preventDefault();
+	var currentName = $(this).text();
+	$(this).text(anagrammedName(currentName));
+});
+
 /*
  * Function that is called when the document is ready.
  */
